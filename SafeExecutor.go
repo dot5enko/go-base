@@ -1,7 +1,7 @@
-package go_base
+package gobase
 
 import (
-	"go-base/errors"
+	"github.com/dot5enko/gobase/errors"
 	"runtime/debug"
 )
 
