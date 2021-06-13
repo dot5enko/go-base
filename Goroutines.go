@@ -34,8 +34,8 @@ func (r ManagedRoutine) Run() {
 	}
 }
 
-func WithInterval(ctx context.Context, duration time.Duration, task func()) ManagedRoutine {
-	r := ManagedRoutine{
+func WithInterval(ctx context.Context, duration time.Duration, task func()) *ManagedRoutine {
+	r := &ManagedRoutine{
 		stepF:    task,
 		endF:     nil,
 		duration: duration,
