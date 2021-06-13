@@ -28,7 +28,7 @@ func (r ManagedRoutine) Run() {
 		case <-r.ctx.Done():
 			end = true
 			if r.endF != nil {
-				r.stepF()
+				r.endF()
 			}
 		}
 	}
