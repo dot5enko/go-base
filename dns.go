@@ -1,10 +1,10 @@
-package gobase;
+package gobase
 
 import (
+	"context"
 	"net"
 	"net/http"
 	"time"
-	"context"
 )
 
 func OverrideDns(ip string) {
